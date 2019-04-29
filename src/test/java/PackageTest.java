@@ -1,21 +1,15 @@
-
 import com.mobiquityinc.exception.APIException;
 import com.mobiquityinc.packer.Packer;
 import com.mobiquityinc.packer.PackerItem;
 import com.mobiquityinc.packer.PackerLine;
-import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class PackageTest {
 
@@ -65,6 +59,17 @@ public class PackageTest {
     public void testPackItemCountMoreThanLimitError() throws APIException  {
         Packer packer = new Packer();
         String s= packer.pack(itemCountMoreThanLimitPath);
+
+    }
+
+    @Test
+    public void testPackSuccessful() throws APIException  {
+        Packer packer = new Packer();
+        String s= packer.pack(trueFilePath);
+        assertThat(s, is(equalTo("4\n" +
+                "-\n" +
+                "2,7\n" +
+                "8,9\n")));
 
     }
 
