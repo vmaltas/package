@@ -31,11 +31,11 @@ public class PackageTest {
 
     @BeforeClass
     public static void readFileBeforeClass() throws Exception {
-        trueFilePath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\inputText1.txt";
-        falseFilePath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\noFile.txt";
-        moreThanHundredPath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\moreThan100.txt";
-        itemWeightMoreThanHundredPath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\itemWeightMoreThan100.txt";
-        itemCountMoreThanLimitPath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\itemMoreThan15.txt";
+        trueFilePath = "C:\\inputText1.txt";
+        falseFilePath = "C:\\noFile.txt";
+        moreThanHundredPath = "C:\\moreThan100.txt";
+        itemWeightMoreThanHundredPath = "C:\\itemWeightMoreThan100.txt";
+        itemCountMoreThanLimitPath = "C:\\itemMoreThan15.txt";
     }
 
     @Test(expected = APIException.class)

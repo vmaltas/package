@@ -22,7 +22,7 @@ public class Packer {
 
     private static final int maxItemLimit = 15;
 
-    private static final String filePath = "C:\\Users\\maltas\\Desktop\\INTER\\CV\\hollanda\\2_mobiquity\\inputText1.txt";
+    private static final String filePath = "C:\\inputText1.txt";
 
 
     public static void main(String[] args) {
