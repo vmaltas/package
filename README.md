@@ -37,4 +37,4 @@ Example
 44 : (1,24.31,€33) (2,14.55,€56) (3,30.91,€14) (4,16.13,€58)
 
 # Credits
-github to give an facility to share this code to all. 
+github to give a facility to share this code to all. 
